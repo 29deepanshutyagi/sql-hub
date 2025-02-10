@@ -37,7 +37,6 @@ export default function Home() {
     setLoading(false);
   };
 
- 
   const handleVerticalResize = (sizes: number[]) => {
     setVerticalSizes(sizes);
   };

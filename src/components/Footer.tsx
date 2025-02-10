@@ -1,33 +1,26 @@
-import { Link, Text, Stack } from "@chakra-ui/react";
-import { BsGithub } from "react-icons/bs";
 import React from "react";
 import { Button } from "./ui/button";
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
   return (
-    <Stack
-      direction={["column", "row"]}
-      bgColor={"teal"}
-      textAlign="center"
-      py={2}
-      color="white"
-      justify={"center"}
-    >
-      <Text fontSize="16">
+    <div className="flex flex-col md:flex-row bg-teal-600 text-center py-2 text-white justify-center gap-2">
+      <p className="text-base">
         SQL Online Editor - Copyright © {currentYear} | Created by{" "}
-        <Button>janvi01</Button>
-      </Text>
-      <Text>
+        <Button variant="link" className="text-white p-0">janvi01</Button>
+      </p>
+      <p>
         | Found an issue? Report it{" "}
-        <Link
-          href="https://github.com/29deepanshutyagi/sql-hub/issues"
-          isExternal
+        <a
+          href="https://github.com/janvi01/sql-editor/issues/new/choose"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline"
         >
-          <u>here.</u>
-        </Link>
-      </Text>
-    </Stack>
+          here.
+        </a>
+      </p>
+    </div>
   );
 };
 
