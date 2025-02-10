@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
       <Text>
         | Found an issue? Report it{" "}
         <Link
-          href="https://github.com/janvi01/sql-editor/issues/new/choose"
+          href="https://github.com/29deepanshutyagi/sql-hub/issues"
           isExternal
         >
           <u>here.</u>
